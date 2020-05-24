@@ -11,6 +11,8 @@ Options:
     url   Base Url of Elasticsearch including port. e.g 'http://localhost:9200'
     source_index  Source Index
     dest_index    Destination Index
+    --username    Elasticsearch username (optional)
+    --password    Elasticsearch password (optional) 
     -h --help  Show this screen
     -v --version  Show version
 """
