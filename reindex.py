@@ -42,7 +42,7 @@ def reindex(url, source_index, dest_index, username=None, password=None):
 
 
 if __name__ == "__main__":
-    arguments = docopt(__doc__, version="0.1")
+    arguments = docopt(__doc__, version="0.0.1")
     if (
         arguments["<url>"],
         arguments["<source_index>"],
