@@ -1,17 +1,18 @@
 #!/usr/bin/env python3
 
-"""REINDEX CLI
+"""Elasticsearch Reindexing CLI: A simple Python script to re-index an Elasticsearch index and track it's progress.
+
 Usage:
     reindex.py reindex <url> <source_index> <dest_index> [--username=<username>] [--password=<password>]
     reindex.py reindex -h|--help
     reindex.py reindex -v|--version
     
 Options:
-    url   "Base Url of Elasticsearch".
-    source_index  Source Index.
-    dest_index    Destination Index.
-    -h --help  Show this screen.
-    -v --version  Show version.
+    url   Base Url of Elasticsearch including port. e.g 'http://localhost:9200'
+    source_index  Source Index
+    dest_index    Destination Index
+    -h --help  Show this screen
+    -v --version  Show version
 """
 
 
@@ -41,7 +42,7 @@ def reindex(url, source_index, dest_index, username=None, password=None):
 
 
 if __name__ == "__main__":
-    arguments = docopt(__doc__, version="1.0")
+    arguments = docopt(__doc__, version="0.1")
     if (
         arguments["<url>"],
         arguments["<source_index>"],
