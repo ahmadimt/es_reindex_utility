@@ -1,6 +1,6 @@
 # JSON serializer
 flask-marshmallow==0.8.0
-marshmallow==3.0.0b5
+marshmallow==3.0.0b9
 
 # requests
 requests>=2.0.0, <3.0.0
